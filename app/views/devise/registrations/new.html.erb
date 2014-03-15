@@ -1,0 +1,49 @@
+<h2>Register</h2>
+
+<script>
+
+          var gercheck;
+          regcheck =
+          $(".user-registration").click(function() {
+	    $("#user_right_user").prop('checked', true);
+	    $(".user-registration").addClass('active-reg');
+            $(".company-registration").removeClass('active-reg');
+            $(".registration-gender").css("display","block");
+          });
+          $(".company-registration").click(function() {
+	    $("#user_right_no-rights").prop('checked', true);
+	    $(".user-registration").removeClass('active-reg');
+            $(".company-registration").addClass('active-reg');
+            $(".registration-gender").css("display","none");
+          });
+ 
+          $(document).ready(regcheck);
+          $(document).on('page:load', regcheck);
+
+</script>
+
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div class="registration">
+  <%= f.radio_button :right, "user", :checked => true %><p class="user-registration active-reg">User registration</p>
+  <%= f.radio_button :right, "no-rights" %><p class="company-registration">Company registration</p></div>
+
+  <div class="registration-username"><%= f.label 'Username' %>
+  <%= f.text_field :profile_name %></div>
+
+  <div class="registration-email"><%= f.label 'E-mail address' %>
+  <%= f.email_field :email, :autofocus => true %></div>
+
+  <div class="registration-password"><%= f.label 'Password' %>
+  <%= f.password_field :password %></div>
+
+  <div class="registration-password-confirm"><%= f.label 'Confirm password' %>
+  <%= f.password_field :password_confirmation %></div>
+
+  <div class="registration-gender"><%= f.label :gender %>
+  <%= f.radio_button :gender, "male", :checked => true %>Male
+  <%= f.radio_button :gender, "female" %>Female</div>
+
+  <div class="registration-submit"><%= f.submit "CREATE NEW ACCOUNT" %></div>
+<% end %>

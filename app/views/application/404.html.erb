@@ -1,0 +1,25 @@
+<div class='content-wide'>
+    <h2>The page you were looking for doesn't exist.</h2>
+    <div class='explain'>You may have mistyped the address or the page may have moved.</div>
+<div class="search-again">
+<%= form_tag result_path, :method => :get do %>
+    <label>Try to use search:</label>
+    <%= text_field_tag :search, params[:search], :placeholder => "Search...", class: "search-input" %>
+    <%= submit_tag "Search", :name => nil, :type => :image, :src => "/img/loop.png", class: "search-loop" %>
+<% end %>
+</div>
+
+</div>
+
+<div class="sidebar-right-340">
+<div class="search-wrapper">
+<h2>SEARCH</h2>
+<div class="search-form">
+<%= form_tag result_path, :method => :get do %>
+    <%= text_field_tag :search, params[:search], :placeholder => "Search...", class: "search-input" %>
+    <%= submit_tag "Search", :name => nil, :type => :image, :src => "/img/loop.png", class: "search-loop" %>
+<% end %>
+</div>
+</div>
+
+</div>

@@ -1,0 +1,31 @@
+<div class='content-wide'>
+    <% @news.each do |news| %>
+<div class='news-article'>
+        <div class='news-title'><%= link_to news.title, news %></div>
+        <div class='news-content'><%= truncate(news.content, :length => 50) %></div>
+        <div class='news-more'><%= link_to 'Read more', news %></div>
+</div>
+    <% end %>
+
+<%= paginate @news, :window => 1 %>
+</div>
+
+<div class="sidebar-right-340">
+<h2>PLACES</h2>
+<div class="sidebar-right-wrapper">
+  <% @places.each do |place| %>
+        <div class="sidebar-right-img"><%= link_to image_tag(place.place_photo(:small)), place %></div>
+  <% end %>
+</div>
+
+<div class="search-wrapper">
+<h2>SEARCH</h2>
+<div class="search-form">
+<%= form_tag result_path, :method => :get do %>
+    <%= text_field_tag :search, params[:search], :placeholder => "Search...", class: "search-input" %>
+    <%= submit_tag "Search", :name => nil, :type => :image, :src => "/img/loop.png", class: "search-loop" %>
+<% end %>
+</div>
+</div>
+
+</div>

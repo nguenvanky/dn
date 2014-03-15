@@ -1,0 +1,1199 @@
+I, [2014-02-16T06:46:18.879835 #24333]  INFO -- : Started GET "/events" for 31.207.130.58 at 2014-02-16 06:46:18 -0500
+I, [2014-02-16T06:46:18.911295 #24333]  INFO -- : Processing by EventsController#index as HTML
+I, [2014-02-16T06:46:19.164986 #24333]  INFO -- : Completed 500 Internal Server Error in 253ms
+F, [2014-02-16T06:46:19.167156 #24333] FATAL -- : 
+RSolr::Error::Http (RSolr::Error::Http - 503 Service Unavailable
+Error:     Server is shutting down
+
+Request Data: "fq=type%3AEvent&start=0&rows=30&q=%2A%3A%2A"
+
+Backtrace: /usr/local/rvm/gems/ruby-2.1.0/gems/rsolr-1.0.9/lib/rsolr/client.rb:268:in `adapt_response'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rsolr-1.0.9/lib/rsolr/client.rb:175:in `execute'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rsolr-1.0.9/lib/rsolr/client.rb:161:in `send_and_receive'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot_rails-2.1.0/lib/sunspot/rails/solr_instrumentation.rb:16:in `block in send_and_receive_with_as_instrumentation'
+/usr/local/rvm/gems/ruby-2.1.0/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `block in instrument'
+/usr/local/rvm/gems/ruby-2.1.0/gems/activesupport-4.0.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/usr/local/rvm/gems/ruby-2.1.0/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `instrument'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot_rails-2.1.0/lib/sunspot/rails/solr_instrumentation.rb:15:in `send_and_receive_with_as_instrumentation'
+(eval):2:in `post'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot-2.1.0/lib/sunspot/search/abstract_search.rb:45:in `execute'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot-2.1.0/lib/sunspot/session.rb:59:in `search'):
+  app/controllers/events_controller.rb:42:in `index'
+
+
+I, [2014-02-16T06:46:19.178849 #24333]  INFO -- : Processing by ApplicationController#404 as HTML
+I, [2014-02-16T06:46:19.233806 #24333]  INFO -- :   Rendered application/404.html.erb within layouts/application (42.3ms)
+I, [2014-02-16T06:46:26.559866 #24333]  INFO -- : Completed 200 OK in 7381ms (Views: 7366.0ms | ActiveRecord: 13.3ms | Solr: 226.1ms)
+I, [2014-02-16T06:46:35.925717 #24333]  INFO -- : Started GET "/events" for 31.207.130.58 at 2014-02-16 06:46:35 -0500
+I, [2014-02-16T06:46:35.958720 #24333]  INFO -- : Processing by EventsController#index as HTML
+I, [2014-02-16T06:46:35.968673 #24333]  INFO -- : Completed 500 Internal Server Error in 10ms
+F, [2014-02-16T06:46:35.970994 #24333] FATAL -- : 
+RSolr::Error::Http (RSolr::Error::Http - 503 Service Unavailable
+Error:     Server is shutting down
+
+Request Data: "fq=type%3AEvent&start=0&rows=30&q=%2A%3A%2A"
+
+Backtrace: /usr/local/rvm/gems/ruby-2.1.0/gems/rsolr-1.0.9/lib/rsolr/client.rb:268:in `adapt_response'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rsolr-1.0.9/lib/rsolr/client.rb:175:in `execute'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rsolr-1.0.9/lib/rsolr/client.rb:161:in `send_and_receive'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot_rails-2.1.0/lib/sunspot/rails/solr_instrumentation.rb:16:in `block in send_and_receive_with_as_instrumentation'
+/usr/local/rvm/gems/ruby-2.1.0/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `block in instrument'
+/usr/local/rvm/gems/ruby-2.1.0/gems/activesupport-4.0.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/usr/local/rvm/gems/ruby-2.1.0/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `instrument'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot_rails-2.1.0/lib/sunspot/rails/solr_instrumentation.rb:15:in `send_and_receive_with_as_instrumentation'
+(eval):2:in `post'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot-2.1.0/lib/sunspot/search/abstract_search.rb:45:in `execute'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot-2.1.0/lib/sunspot/session.rb:59:in `search'):
+  app/controllers/events_controller.rb:42:in `index'
+
+
+I, [2014-02-16T06:46:35.973433 #24333]  INFO -- : Processing by ApplicationController#404 as HTML
+I, [2014-02-16T06:46:35.979956 #24333]  INFO -- :   Rendered application/404.html.erb within layouts/application (5.5ms)
+I, [2014-02-16T06:46:36.004242 #24333]  INFO -- : Completed 200 OK in 31ms (Views: 29.2ms | ActiveRecord: 1.0ms | Solr: 7.3ms)
+I, [2014-02-16T06:46:37.608028 #24333]  INFO -- : Started GET "/places" for 31.207.130.58 at 2014-02-16 06:46:37 -0500
+I, [2014-02-16T06:46:37.612155 #24333]  INFO -- : Processing by PlacesController#index as HTML
+I, [2014-02-16T06:46:37.663655 #24333]  INFO -- :   Rendered places/index.html.erb within layouts/application (14.6ms)
+I, [2014-02-16T06:46:37.685283 #24333]  INFO -- : Completed 200 OK in 73ms (Views: 65.9ms | ActiveRecord: 1.7ms | Solr: 0.0ms)
+I, [2014-02-16T06:46:41.321209 #24333]  INFO -- : Started GET "/user/admi" for 31.207.130.58 at 2014-02-16 06:46:41 -0500
+I, [2014-02-16T06:46:41.324564 #24333]  INFO -- : Processing by UserController#show as HTML
+I, [2014-02-16T06:46:41.324685 #24333]  INFO -- :   Parameters: {"id"=>"admi"}
+I, [2014-02-16T06:46:41.348365 #24333]  INFO -- :   Rendered user/subscription.html.erb within layouts/application (9.3ms)
+I, [2014-02-16T06:46:41.368740 #24333]  INFO -- : Completed 200 OK in 44ms (Views: 37.7ms | ActiveRecord: 1.3ms | Solr: 0.0ms)
+I, [2014-02-21T12:42:42.293522 #24328]  INFO -- : Started GET "/" for 31.207.130.58 at 2014-02-21 12:42:42 -0500
+I, [2014-02-21T12:42:42.333457 #24328]  INFO -- : Processing by SiteController#index as HTML
+I, [2014-02-21T12:42:42.395723 #24328]  INFO -- :   Rendered site/index.html.erb within layouts/application (4.6ms)
+I, [2014-02-21T12:42:43.021401 #24328]  INFO -- : Completed 200 OK in 688ms (Views: 656.6ms | ActiveRecord: 3.0ms | Solr: 0.0ms)
+I, [2014-02-21T12:42:50.867863 #24328]  INFO -- : Started GET "/" for 31.207.130.58 at 2014-02-21 12:42:50 -0500
+I, [2014-02-21T12:42:50.870919 #24328]  INFO -- : Processing by SiteController#index as HTML
+I, [2014-02-21T12:42:50.876137 #24328]  INFO -- :   Rendered site/index.html.erb within layouts/application (1.3ms)
+I, [2014-02-21T12:42:50.896880 #24328]  INFO -- : Completed 200 OK in 26ms (Views: 21.9ms | ActiveRecord: 1.0ms | Solr: 0.0ms)
+I, [2014-02-21T12:43:46.119559 #24366]  INFO -- : Started GET "/" for 31.207.130.58 at 2014-02-21 12:43:46 -0500
+I, [2014-02-21T12:43:46.151092 #24366]  INFO -- : Processing by SiteController#index as HTML
+I, [2014-02-21T12:43:46.188351 #24366]  INFO -- :   Rendered site/index.html.erb within layouts/application (4.6ms)
+I, [2014-02-21T12:43:46.318654 #24366]  INFO -- : Completed 200 OK in 167ms (Views: 136.3ms | ActiveRecord: 2.7ms | Solr: 0.0ms)
+I, [2014-02-21T12:56:20.824217 #24520]  INFO -- : Started GET "/" for 31.207.130.58 at 2014-02-21 12:56:20 -0500
+I, [2014-02-21T12:56:20.856248 #24520]  INFO -- : Processing by SiteController#index as HTML
+I, [2014-02-21T12:56:20.893759 #24520]  INFO -- :   Rendered site/index.html.erb within layouts/application (4.7ms)
+I, [2014-02-21T12:56:21.023874 #24520]  INFO -- : Completed 200 OK in 167ms (Views: 136.2ms | ActiveRecord: 2.7ms | Solr: 0.0ms)
+I, [2014-02-21T13:10:30.626131 #24520]  INFO -- : Started GET "/" for 31.207.130.58 at 2014-02-21 13:10:30 -0500
+I, [2014-02-21T13:10:30.629200 #24520]  INFO -- : Processing by SiteController#index as HTML
+I, [2014-02-21T13:10:30.634350 #24520]  INFO -- :   Rendered site/index.html.erb within layouts/application (1.3ms)
+I, [2014-02-21T13:10:30.654984 #24520]  INFO -- : Completed 200 OK in 25ms (Views: 21.7ms | ActiveRecord: 1.0ms | Solr: 0.0ms)
+I, [2014-02-21T13:31:05.963377 #24996]  INFO -- : Started GET "/" for 31.207.130.58 at 2014-02-21 13:31:05 -0500
+I, [2014-02-21T13:31:05.994854 #24996]  INFO -- : Processing by SiteController#index as HTML
+I, [2014-02-21T13:31:06.033057 #24996]  INFO -- :   Rendered site/index.html.erb within layouts/application (4.7ms)
+I, [2014-02-21T13:31:06.164613 #24996]  INFO -- : Completed 200 OK in 169ms (Views: 137.7ms | ActiveRecord: 2.8ms | Solr: 0.0ms)
+I, [2014-02-21T13:31:10.878164 #24996]  INFO -- : Started GET "/places" for 31.207.130.58 at 2014-02-21 13:31:10 -0500
+I, [2014-02-21T13:31:10.881515 #24996]  INFO -- : Processing by PlacesController#index as HTML
+I, [2014-02-21T13:31:10.967696 #24996]  INFO -- :   Rendered places/index.html.erb within layouts/application (58.4ms)
+I, [2014-02-21T13:31:10.986743 #24996]  INFO -- : Completed 200 OK in 105ms (Views: 99.5ms | ActiveRecord: 2.2ms | Solr: 0.0ms)
+I, [2014-02-21T13:31:15.064365 #24996]  INFO -- : Started GET "/places" for 31.207.130.58 at 2014-02-21 13:31:15 -0500
+I, [2014-02-21T13:31:15.067233 #24996]  INFO -- : Processing by PlacesController#index as HTML
+I, [2014-02-21T13:31:15.076415 #24996]  INFO -- :   Rendered places/index.html.erb within layouts/application (7.2ms)
+I, [2014-02-21T13:31:15.094705 #24996]  INFO -- : Completed 200 OK in 27ms (Views: 24.7ms | ActiveRecord: 1.0ms | Solr: 0.0ms)
+I, [2014-02-21T13:31:19.076502 #24996]  INFO -- : Started POST "/users/sign_in" for 31.207.130.58 at 2014-02-21 13:31:19 -0500
+I, [2014-02-21T13:31:19.079960 #24996]  INFO -- : Processing by Devise::SessionsController#create as HTML
+I, [2014-02-21T13:31:19.080105 #24996]  INFO -- :   Parameters: {"authenticity_token"=>"XdMCshvMNl/IcrzKH/TArAQQDdLXY4zkgaU1UgzwNcU="}
+I, [2014-02-21T13:31:19.093950 #24996]  INFO -- : Completed 401 Unauthorized in 14ms
+I, [2014-02-21T13:31:19.190008 #24996]  INFO -- : Started GET "/places" for 31.207.130.58 at 2014-02-21 13:31:19 -0500
+I, [2014-02-21T13:31:19.191256 #24996]  INFO -- : Processing by PlacesController#index as HTML
+I, [2014-02-21T13:31:19.201075 #24996]  INFO -- :   Rendered places/index.html.erb within layouts/application (7.8ms)
+I, [2014-02-21T13:31:19.221856 #24996]  INFO -- : Completed 200 OK in 30ms (Views: 27.7ms | ActiveRecord: 1.2ms | Solr: 0.0ms)
+I, [2014-02-21T13:31:26.118236 #24996]  INFO -- : Started GET "/images/spinner" for 31.207.130.58 at 2014-02-21 13:31:26 -0500
+F, [2014-02-21T13:31:26.120264 #24996] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/images/spinner"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2014-02-21T13:31:26.134951 #24996]  INFO -- : Processing by ApplicationController#404 as HTML
+I, [2014-02-21T13:31:26.140738 #24996]  INFO -- :   Rendered application/404.html.erb within layouts/application (3.2ms)
+I, [2014-02-21T13:31:26.141088 #24996]  INFO -- : Completed 500 Internal Server Error in 6ms
+I, [2014-02-21T13:31:26.143001 #24996]  INFO -- : Started GET "/users/sign_in" for 31.207.130.58 at 2014-02-21 13:31:26 -0500
+I, [2014-02-21T13:31:26.145459 #24996]  INFO -- : Processing by Devise::SessionsController#new as */*
+I, [2014-02-21T13:31:26.313829 #24996]  INFO -- :   Rendered devise/sessions/new.html.erb (122.5ms)
+I, [2014-02-21T13:31:26.314396 #24996]  INFO -- : Completed 200 OK in 169ms (Views: 143.9ms | ActiveRecord: 0.6ms | Solr: 0.0ms)
+I, [2014-02-21T13:31:26.583105 #24996]  INFO -- : Started GET "/images/close" for 31.207.130.58 at 2014-02-21 13:31:26 -0500
+F, [2014-02-21T13:31:26.584722 #24996] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/images/close"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2014-02-21T13:31:26.587028 #24996]  INFO -- : Processing by ApplicationController#404 as HTML
+I, [2014-02-21T13:31:26.592003 #24996]  INFO -- :   Rendered application/404.html.erb within layouts/application (1.7ms)
+I, [2014-02-21T13:31:26.592191 #24996]  INFO -- : Completed 500 Internal Server Error in 5ms
+I, [2014-02-21T13:31:30.154929 #24996]  INFO -- : Started POST "/users/sign_in" for 31.207.130.58 at 2014-02-21 13:31:30 -0500
+I, [2014-02-21T13:31:30.156537 #24996]  INFO -- : Processing by Devise::SessionsController#create as HTML
+I, [2014-02-21T13:31:30.156659 #24996]  INFO -- :   Parameters: {"authenticity_token"=>"XdMCshvMNl/IcrzKH/TArAQQDdLXY4zkgaU1UgzwNcU="}
+I, [2014-02-21T13:31:30.158069 #24996]  INFO -- : Completed 401 Unauthorized in 1ms
+I, [2014-02-21T13:31:30.255323 #24996]  INFO -- : Started GET "/places" for 31.207.130.58 at 2014-02-21 13:31:30 -0500
+I, [2014-02-21T13:31:30.256852 #24996]  INFO -- : Processing by PlacesController#index as HTML
+I, [2014-02-21T13:31:30.266930 #24996]  INFO -- :   Rendered places/index.html.erb within layouts/application (7.9ms)
+I, [2014-02-21T13:31:30.285971 #24996]  INFO -- : Completed 200 OK in 29ms (Views: 26.1ms | ActiveRecord: 1.1ms | Solr: 0.0ms)
+I, [2014-02-21T13:31:32.386726 #24996]  INFO -- : Started GET "/images/spinner" for 31.207.130.58 at 2014-02-21 13:31:32 -0500
+F, [2014-02-21T13:31:32.388551 #24996] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/images/spinner"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2014-02-21T13:31:32.391864 #24996]  INFO -- : Processing by ApplicationController#404 as HTML
+I, [2014-02-21T13:31:32.394878 #24996]  INFO -- :   Rendered application/404.html.erb within layouts/application (1.7ms)
+I, [2014-02-21T13:31:32.395207 #24996]  INFO -- : Completed 500 Internal Server Error in 3ms
+I, [2014-02-21T13:31:32.396920 #24996]  INFO -- : Started GET "/users/sign_in" for 31.207.130.58 at 2014-02-21 13:31:32 -0500
+I, [2014-02-21T13:31:32.398025 #24996]  INFO -- : Processing by Devise::SessionsController#new as */*
+I, [2014-02-21T13:31:32.403281 #24996]  INFO -- :   Rendered devise/sessions/new.html.erb (3.5ms)
+I, [2014-02-21T13:31:32.403611 #24996]  INFO -- : Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+I, [2014-02-21T13:31:32.630493 #24996]  INFO -- : Started GET "/images/close" for 31.207.130.58 at 2014-02-21 13:31:32 -0500
+F, [2014-02-21T13:31:32.632221 #24996] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/images/close"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2014-02-21T13:31:32.633354 #24996]  INFO -- : Processing by ApplicationController#404 as HTML
+I, [2014-02-21T13:31:32.636429 #24996]  INFO -- :   Rendered application/404.html.erb within layouts/application (1.7ms)
+I, [2014-02-21T13:31:32.636619 #24996]  INFO -- : Completed 500 Internal Server Error in 3ms
+I, [2014-02-21T13:33:09.163435 #24996]  INFO -- : Started GET "/places?sort=subscribers_female_asc" for 31.207.130.58 at 2014-02-21 13:33:09 -0500
+I, [2014-02-21T13:33:09.164995 #24996]  INFO -- : Processing by PlacesController#index as HTML
+I, [2014-02-21T13:33:09.165123 #24996]  INFO -- :   Parameters: {"sort"=>"subscribers_female_asc"}
+I, [2014-02-21T13:33:09.174432 #24996]  INFO -- :   Rendered places/index.html.erb within layouts/application (7.2ms)
+I, [2014-02-21T13:33:09.192458 #24996]  INFO -- : Completed 200 OK in 27ms (Views: 24.5ms | ActiveRecord: 1.1ms | Solr: 0.0ms)
+I, [2014-02-21T13:33:39.527221 #24996]  INFO -- : Started GET "/images/spinner" for 31.207.130.58 at 2014-02-21 13:33:39 -0500
+F, [2014-02-21T13:33:39.529254 #24996] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/images/spinner"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2014-02-21T13:33:39.537926 #24996]  INFO -- : Processing by ApplicationController#404 as HTML
+I, [2014-02-21T13:33:39.541099 #24996]  INFO -- :   Rendered application/404.html.erb within layouts/application (1.8ms)
+I, [2014-02-21T13:33:39.541297 #24996]  INFO -- : Completed 500 Internal Server Error in 3ms
+I, [2014-02-21T13:33:39.630559 #24996]  INFO -- : Started GET "/users/sign_up" for 31.207.130.58 at 2014-02-21 13:33:39 -0500
+I, [2014-02-21T13:33:39.633358 #24996]  INFO -- : Processing by RegistrationsController#new as */*
+I, [2014-02-21T13:33:39.646730 #24996]  INFO -- :   Rendered devise/registrations/new.html.erb (9.0ms)
+I, [2014-02-21T13:33:39.647225 #24996]  INFO -- : Completed 200 OK in 14ms (Views: 11.8ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+I, [2014-02-21T13:33:39.811957 #24996]  INFO -- : Started GET "/images/close" for 31.207.130.58 at 2014-02-21 13:33:39 -0500
+F, [2014-02-21T13:33:39.813735 #24996] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/images/close"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2014-02-21T13:33:39.814934 #24996]  INFO -- : Processing by ApplicationController#404 as HTML
+I, [2014-02-21T13:33:39.817937 #24996]  INFO -- :   Rendered application/404.html.erb within layouts/application (1.7ms)
+I, [2014-02-21T13:33:39.818131 #24996]  INFO -- : Completed 500 Internal Server Error in 3ms
+I, [2014-02-21T13:33:54.312272 #24996]  INFO -- : Started POST "/users" for 31.207.130.58 at 2014-02-21 13:33:54 -0500
+I, [2014-02-21T13:33:54.315582 #24996]  INFO -- : Processing by RegistrationsController#create as HTML
+I, [2014-02-21T13:33:54.315752 #24996]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"XdMCshvMNl/IcrzKH/TArAQQDdLXY4zkgaU1UgzwNcU=", "user"=>{"right"=>"user", "profile_name"=>"alex17", "email"=>"alex17021991@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "gender"=>"male"}, "commit"=>"CREATE NEW ACCOUNT"}
+I, [2014-02-21T13:33:54.464273 #24996]  INFO -- : Redirected to http://daysandnights.nl:3000/places?sort=subscribers_female_asc
+I, [2014-02-21T13:33:54.464616 #24996]  INFO -- : Completed 302 Found in 149ms (ActiveRecord: 0.7ms)
+I, [2014-02-21T13:33:54.546668 #24996]  INFO -- : Started GET "/places?sort=subscribers_female_asc" for 31.207.130.58 at 2014-02-21 13:33:54 -0500
+I, [2014-02-21T13:33:54.548160 #24996]  INFO -- : Processing by PlacesController#index as HTML
+I, [2014-02-21T13:33:54.548275 #24996]  INFO -- :   Parameters: {"sort"=>"subscribers_female_asc"}
+I, [2014-02-21T13:33:54.557944 #24996]  INFO -- :   Rendered places/index.html.erb within layouts/application (7.5ms)
+I, [2014-02-21T13:33:54.576752 #24996]  INFO -- : Completed 200 OK in 28ms (Views: 25.8ms | ActiveRecord: 0.9ms | Solr: 0.0ms)
+I, [2014-02-21T13:34:00.094567 #24996]  INFO -- : Started GET "/images/spinner" for 31.207.130.58 at 2014-02-21 13:34:00 -0500
+F, [2014-02-21T13:34:00.096357 #24996] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/images/spinner"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2014-02-21T13:34:00.097574 #24996]  INFO -- : Processing by ApplicationController#404 as HTML
+I, [2014-02-21T13:34:00.102995 #24996]  INFO -- :   Rendered application/404.html.erb within layouts/application (1.8ms)
+I, [2014-02-21T13:34:00.103211 #24996]  INFO -- : Completed 500 Internal Server Error in 5ms
+I, [2014-02-21T13:34:00.104942 #24996]  INFO -- : Started GET "/users/sign_up" for 31.207.130.58 at 2014-02-21 13:34:00 -0500
+I, [2014-02-21T13:34:00.106049 #24996]  INFO -- : Processing by RegistrationsController#new as */*
+I, [2014-02-21T13:34:00.112691 #24996]  INFO -- :   Rendered devise/registrations/new.html.erb (5.0ms)
+I, [2014-02-21T13:34:00.113291 #24996]  INFO -- : Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+I, [2014-02-21T13:34:00.202477 #24996]  INFO -- : Started GET "/images/close" for 31.207.130.58 at 2014-02-21 13:34:00 -0500
+F, [2014-02-21T13:34:00.204002 #24996] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/images/close"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2014-02-21T13:34:00.204817 #24996]  INFO -- : Processing by ApplicationController#404 as HTML
+I, [2014-02-21T13:34:00.207416 #24996]  INFO -- :   Rendered application/404.html.erb within layouts/application (1.5ms)
+I, [2014-02-21T13:34:00.207612 #24996]  INFO -- : Completed 500 Internal Server Error in 2ms
+I, [2014-02-21T13:34:09.461676 #24996]  INFO -- : Started POST "/users" for 31.207.130.58 at 2014-02-21 13:34:09 -0500
+I, [2014-02-21T13:34:09.463310 #24996]  INFO -- : Processing by RegistrationsController#create as HTML
+I, [2014-02-21T13:34:09.463461 #24996]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"XdMCshvMNl/IcrzKH/TArAQQDdLXY4zkgaU1UgzwNcU=", "user"=>{"right"=>"user", "profile_name"=>"alex", "email"=>"alex17021991@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "gender"=>"male"}, "commit"=>"CREATE NEW ACCOUNT"}
+I, [2014-02-21T13:34:09.584665 #24996]  INFO -- : Redirected to http://daysandnights.nl:3000/places?sort=subscribers_female_asc
+I, [2014-02-21T13:34:09.585088 #24996]  INFO -- : Completed 302 Found in 121ms (ActiveRecord: 0.5ms)
+I, [2014-02-21T13:34:09.667571 #24996]  INFO -- : Started GET "/places?sort=subscribers_female_asc" for 31.207.130.58 at 2014-02-21 13:34:09 -0500
+I, [2014-02-21T13:34:09.668923 #24996]  INFO -- : Processing by PlacesController#index as HTML
+I, [2014-02-21T13:34:09.669047 #24996]  INFO -- :   Parameters: {"sort"=>"subscribers_female_asc"}
+I, [2014-02-21T13:34:09.678373 #24996]  INFO -- :   Rendered places/index.html.erb within layouts/application (7.3ms)
+I, [2014-02-21T13:34:09.702856 #24996]  INFO -- : Completed 200 OK in 34ms (Views: 31.0ms | ActiveRecord: 1.0ms | Solr: 0.0ms)
+I, [2014-02-21T13:34:39.244994 #24996]  INFO -- : Started GET "/images/spinner" for 31.207.130.58 at 2014-02-21 13:34:39 -0500
+F, [2014-02-21T13:34:39.248877 #24996] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/images/spinner"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2014-02-21T13:34:39.250141 #24996]  INFO -- : Processing by ApplicationController#404 as HTML
+I, [2014-02-21T13:34:39.253214 #24996]  INFO -- :   Rendered application/404.html.erb within layouts/application (1.8ms)
+I, [2014-02-21T13:34:39.253399 #24996]  INFO -- : Completed 500 Internal Server Error in 3ms
+I, [2014-02-21T13:34:39.254971 #24996]  INFO -- : Started GET "/users/sign_in" for 31.207.130.58 at 2014-02-21 13:34:39 -0500
+I, [2014-02-21T13:34:39.256077 #24996]  INFO -- : Processing by Devise::SessionsController#new as */*
+I, [2014-02-21T13:34:39.261585 #24996]  INFO -- :   Rendered devise/sessions/new.html.erb (3.6ms)
+I, [2014-02-21T13:34:39.262015 #24996]  INFO -- : Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+I, [2014-02-21T13:34:39.494801 #24996]  INFO -- : Started GET "/images/close" for 31.207.130.58 at 2014-02-21 13:34:39 -0500
+F, [2014-02-21T13:34:39.496526 #24996] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/images/close"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2014-02-21T13:34:39.497694 #24996]  INFO -- : Processing by ApplicationController#404 as HTML
+I, [2014-02-21T13:34:39.500740 #24996]  INFO -- :   Rendered application/404.html.erb within layouts/application (1.6ms)
+I, [2014-02-21T13:34:39.501060 #24996]  INFO -- : Completed 500 Internal Server Error in 3ms
+I, [2014-02-21T13:34:41.759210 #24996]  INFO -- : Started GET "/users/sign_up" for 31.207.130.58 at 2014-02-21 13:34:41 -0500
+I, [2014-02-21T13:34:41.760794 #24996]  INFO -- : Processing by RegistrationsController#new as */*
+I, [2014-02-21T13:34:41.767702 #24996]  INFO -- :   Rendered devise/registrations/new.html.erb (5.0ms)
+I, [2014-02-21T13:34:41.768148 #24996]  INFO -- : Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+I, [2014-02-21T13:35:02.045255 #24996]  INFO -- : Started GET "/users/sign_up" for 31.207.130.58 at 2014-02-21 13:35:02 -0500
+I, [2014-02-21T13:35:02.046582 #24996]  INFO -- : Processing by RegistrationsController#new as */*
+I, [2014-02-21T13:35:02.053048 #24996]  INFO -- :   Rendered devise/registrations/new.html.erb (4.6ms)
+I, [2014-02-21T13:35:02.053371 #24996]  INFO -- : Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+I, [2014-02-21T13:35:09.605325 #24996]  INFO -- : Started POST "/users" for 31.207.130.58 at 2014-02-21 13:35:09 -0500
+I, [2014-02-21T13:35:09.606977 #24996]  INFO -- : Processing by RegistrationsController#create as HTML
+I, [2014-02-21T13:35:09.607172 #24996]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"XdMCshvMNl/IcrzKH/TArAQQDdLXY4zkgaU1UgzwNcU=", "user"=>{"right"=>"user", "profile_name"=>"alex", "email"=>"alex17021991@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "gender"=>"male"}, "commit"=>"CREATE NEW ACCOUNT"}
+I, [2014-02-21T13:35:09.728543 #24996]  INFO -- : Redirected to http://daysandnights.nl:3000/places?sort=subscribers_female_asc
+I, [2014-02-21T13:35:09.728822 #24996]  INFO -- : Completed 302 Found in 121ms (ActiveRecord: 0.5ms)
+I, [2014-02-21T13:35:09.911164 #24996]  INFO -- : Started GET "/places?sort=subscribers_female_asc" for 31.207.130.58 at 2014-02-21 13:35:09 -0500
+I, [2014-02-21T13:35:09.912602 #24996]  INFO -- : Processing by PlacesController#index as HTML
+I, [2014-02-21T13:35:09.912717 #24996]  INFO -- :   Parameters: {"sort"=>"subscribers_female_asc"}
+I, [2014-02-21T13:35:09.922109 #24996]  INFO -- :   Rendered places/index.html.erb within layouts/application (7.3ms)
+I, [2014-02-21T13:35:09.939954 #24996]  INFO -- : Completed 200 OK in 27ms (Views: 24.5ms | ActiveRecord: 0.9ms | Solr: 0.0ms)
+I, [2014-03-05T11:33:20.820104 #13042]  INFO -- : Started GET "/" for 31.207.130.58 at 2014-03-05 11:33:20 -0500
+I, [2014-03-05T11:33:20.859551 #13042]  INFO -- : Processing by SiteController#index as HTML
+I, [2014-03-05T11:33:20.896910 #13042]  INFO -- :   Rendered site/index.html.erb within layouts/application (4.8ms)
+I, [2014-03-05T11:33:21.167129 #13042]  INFO -- : Completed 200 OK in 307ms (Views: 276.4ms | ActiveRecord: 2.8ms | Solr: 0.0ms)
+I, [2014-03-05T11:51:11.177040 #13284]  INFO -- : Started GET "/cgi-sys/defaultwebpage.cgi" for 31.207.130.58 at 2014-03-05 11:51:11 -0500
+F, [2014-03-05T11:51:11.207223 #13284] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/cgi-sys/defaultwebpage.cgi"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2014-03-05T11:51:11.224592 #13284]  INFO -- : Processing by ApplicationController#404 as HTML
+I, [2014-03-05T11:51:11.265940 #13284]  INFO -- :   Rendered application/404.html.erb within layouts/application (15.4ms)
+I, [2014-03-05T11:51:11.266190 #13284]  INFO -- : Completed 500 Internal Server Error in 41ms
+I, [2014-03-05T11:51:19.925247 #13284]  INFO -- : Started GET "/cgi-sys/defaultwebpage.cgi" for 31.207.130.58 at 2014-03-05 11:51:19 -0500
+F, [2014-03-05T11:51:19.927164 #13284] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/cgi-sys/defaultwebpage.cgi"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2014-03-05T11:51:19.929825 #13284]  INFO -- : Processing by ApplicationController#404 as HTML
+I, [2014-03-05T11:51:19.932671 #13284]  INFO -- :   Rendered application/404.html.erb within layouts/application (1.6ms)
+I, [2014-03-05T11:51:19.932857 #13284]  INFO -- : Completed 500 Internal Server Error in 3ms
+I, [2014-03-05T11:51:42.206100 #13289]  INFO -- : Started GET "/" for 31.207.130.58 at 2014-03-05 11:51:42 -0500
+I, [2014-03-05T11:51:42.237826 #13289]  INFO -- : Processing by SiteController#index as HTML
+I, [2014-03-05T11:51:42.275332 #13289]  INFO -- :   Rendered site/index.html.erb within layouts/application (4.7ms)
+I, [2014-03-05T11:51:42.408174 #13289]  INFO -- : Completed 200 OK in 170ms (Views: 138.9ms | ActiveRecord: 2.8ms | Solr: 0.0ms)
+I, [2014-03-05T11:52:48.686293 #13303]  INFO -- : Started GET "/cgi-sys/defaultwebpage.cgi" for 31.207.130.58 at 2014-03-05 11:52:48 -0500
+F, [2014-03-05T11:52:48.716102 #13303] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/cgi-sys/defaultwebpage.cgi"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2014-03-05T11:52:48.722237 #13303]  INFO -- : Processing by ApplicationController#404 as HTML
+I, [2014-03-05T11:52:48.763258 #13303]  INFO -- :   Rendered application/404.html.erb within layouts/application (15.0ms)
+I, [2014-03-05T11:52:48.763681 #13303]  INFO -- : Completed 500 Internal Server Error in 41ms
+I, [2014-03-05T12:25:21.715596 #15686]  INFO -- : Started GET "/" for 31.207.130.58 at 2014-03-05 12:25:21 -0500
+I, [2014-03-05T12:25:21.792850 #15686]  INFO -- : Processing by SiteController#index as HTML
+I, [2014-03-05T12:25:21.858511 #15686]  INFO -- :   Rendered site/index.html.erb within layouts/application (4.7ms)
+I, [2014-03-05T12:25:22.022000 #15686]  INFO -- : Completed 200 OK in 229ms (Views: 197.3ms | ActiveRecord: 3.3ms | Solr: 0.0ms)
+I, [2014-03-05T12:27:48.652385 #15913]  INFO -- : Started GET "/cgi-sys/defaultwebpage.cgi" for 31.207.130.58 at 2014-03-05 12:27:48 -0500
+F, [2014-03-05T12:27:48.682623 #15913] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/cgi-sys/defaultwebpage.cgi"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2014-03-05T12:27:48.689083 #15913]  INFO -- : Processing by ApplicationController#404 as HTML
+I, [2014-03-05T12:27:48.729834 #15913]  INFO -- :   Rendered application/404.html.erb within layouts/application (14.9ms)
+I, [2014-03-05T12:27:48.730046 #15913]  INFO -- : Completed 500 Internal Server Error in 41ms
+I, [2014-03-05T12:27:54.913533 #15913]  INFO -- : Started GET "/cgi-sys/defaultwebpage.cgi" for 31.207.130.58 at 2014-03-05 12:27:54 -0500
+F, [2014-03-05T12:27:54.915582 #15913] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/cgi-sys/defaultwebpage.cgi"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2014-03-05T12:27:54.918109 #15913]  INFO -- : Processing by ApplicationController#404 as HTML
+I, [2014-03-05T12:27:54.920971 #15913]  INFO -- :   Rendered application/404.html.erb within layouts/application (1.7ms)
+I, [2014-03-05T12:27:54.921157 #15913]  INFO -- : Completed 500 Internal Server Error in 3ms
+I, [2014-03-05T12:27:58.123151 #15913]  INFO -- : Started GET "/cgi-sys/defaultwebpage.cgi" for 31.207.130.58 at 2014-03-05 12:27:58 -0500
+F, [2014-03-05T12:27:58.125139 #15913] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/cgi-sys/defaultwebpage.cgi"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2014-03-05T12:27:58.126386 #15913]  INFO -- : Processing by ApplicationController#404 as HTML
+I, [2014-03-05T12:27:58.129338 #15913]  INFO -- :   Rendered application/404.html.erb within layouts/application (1.7ms)
+I, [2014-03-05T12:27:58.129661 #15913]  INFO -- : Completed 500 Internal Server Error in 3ms
+I, [2014-03-05T12:28:32.480288 #15919]  INFO -- : Started GET "/" for 31.207.130.58 at 2014-03-05 12:28:32 -0500
+I, [2014-03-05T12:28:32.511544 #15919]  INFO -- : Processing by SiteController#index as HTML
+I, [2014-03-05T12:28:32.549286 #15919]  INFO -- :   Rendered site/index.html.erb within layouts/application (4.7ms)
+I, [2014-03-05T12:28:32.679294 #15919]  INFO -- : Completed 200 OK in 167ms (Views: 136.4ms | ActiveRecord: 2.8ms | Solr: 0.0ms)
+I, [2014-03-05T12:28:55.191521 #15929]  INFO -- : Started GET "/cgi-sys/defaultwebpage.cgi" for 31.207.130.58 at 2014-03-05 12:28:55 -0500
+F, [2014-03-05T12:28:55.222028 #15929] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/cgi-sys/defaultwebpage.cgi"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2014-03-05T12:28:55.228124 #15929]  INFO -- : Processing by ApplicationController#404 as HTML
+I, [2014-03-05T12:28:55.269055 #15929]  INFO -- :   Rendered application/404.html.erb within layouts/application (15.2ms)
+I, [2014-03-05T12:28:55.269313 #15929]  INFO -- : Completed 500 Internal Server Error in 41ms
+I, [2014-03-05T12:30:01.106768 #15929]  INFO -- : Started GET "/whm-server-status" for 127.0.0.1 at 2014-03-05 12:30:01 -0500
+F, [2014-03-05T12:30:01.108499 #15929] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/whm-server-status"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2014-03-05T12:30:01.110928 #15929]  INFO -- : Processing by ApplicationController#404 as HTML
+I, [2014-03-05T12:30:01.113553 #15929]  INFO -- :   Rendered application/404.html.erb within layouts/application (1.9ms)
+I, [2014-03-05T12:30:01.113803 #15929]  INFO -- : Completed 500 Internal Server Error in 3ms
+I, [2014-03-12T04:00:55.584104 #20312]  INFO -- : Started GET "/" for 31.207.130.58 at 2014-03-12 04:00:55 -0400
+I, [2014-03-12T04:00:55.629172 #20312]  INFO -- : Processing by SiteController#index as HTML
+I, [2014-03-12T04:00:55.666862 #20312]  INFO -- :   Rendered site/index.html.erb within layouts/application (4.7ms)
+I, [2014-03-12T04:00:55.942104 #20312]  INFO -- : Completed 200 OK in 312ms (Views: 281.2ms | ActiveRecord: 2.8ms | Solr: 0.0ms)
+I, [2014-03-12T04:01:02.472362 #20312]  INFO -- : Started GET "/places" for 31.207.130.58 at 2014-03-12 04:01:02 -0400
+I, [2014-03-12T04:01:02.475782 #20312]  INFO -- : Processing by PlacesController#index as HTML
+I, [2014-03-12T04:01:02.547808 #20312]  INFO -- :   Rendered places/index.html.erb within layouts/application (66.0ms)
+I, [2014-03-12T04:01:02.567971 #20312]  INFO -- : Completed 200 OK in 92ms (Views: 86.2ms | ActiveRecord: 2.4ms | Solr: 0.0ms)
+I, [2014-03-12T04:01:08.516885 #20312]  INFO -- : Started GET "/events" for 31.207.130.58 at 2014-03-12 04:01:08 -0400
+I, [2014-03-12T04:01:08.520276 #20312]  INFO -- : Processing by EventsController#index as HTML
+I, [2014-03-12T04:01:08.529526 #20312]  INFO -- : Completed 500 Internal Server Error in 9ms
+F, [2014-03-12T04:01:08.531380 #20312] FATAL -- : 
+Errno::ECONNREFUSED (Connection refused - {:data=>"fq=type%3AEvent&start=0&rows=30&q=%2A%3A%2A", :method=>:post, :params=>{:wt=>:ruby}, :query=>"wt=ruby", :headers=>{"Content-Type"=>"application/x-www-form-urlencoded; charset=UTF-8"}, :path=>"select", :uri=>#<URI::HTTP:0x000000057129b0 URL:http://localhost:8983/solr/production/select?wt=ruby>, :open_timeout=>nil, :read_timeout=>nil, :retry_503=>nil, :retry_after_limit=>nil}):
+  app/controllers/events_controller.rb:42:in `index'
+
+
+I, [2014-03-12T04:01:08.545625 #20312]  INFO -- : Processing by ApplicationController#404 as HTML
+I, [2014-03-12T04:01:08.551052 #20312]  INFO -- :   Rendered application/404.html.erb within layouts/application (3.4ms)
+I, [2014-03-12T04:01:08.551317 #20312]  INFO -- : Completed 500 Internal Server Error in 6ms
+I, [2014-03-12T04:02:07.280555 #20370]  INFO -- : Started GET "/" for 31.207.130.58 at 2014-03-12 04:02:07 -0400
+I, [2014-03-12T04:02:07.312197 #20370]  INFO -- : Processing by SiteController#index as HTML
+I, [2014-03-12T04:02:07.349374 #20370]  INFO -- :   Rendered site/index.html.erb within layouts/application (4.7ms)
+I, [2014-03-12T04:02:07.479220 #20370]  INFO -- : Completed 200 OK in 167ms (Views: 135.8ms | ActiveRecord: 2.8ms | Solr: 0.0ms)
+I, [2014-03-12T04:02:10.197630 #20370]  INFO -- : Started GET "/places" for 31.207.130.58 at 2014-03-12 04:02:10 -0400
+I, [2014-03-12T04:02:10.201020 #20370]  INFO -- : Processing by PlacesController#index as HTML
+I, [2014-03-12T04:02:10.264511 #20370]  INFO -- :   Rendered places/index.html.erb within layouts/application (57.7ms)
+I, [2014-03-12T04:02:10.283994 #20370]  INFO -- : Completed 200 OK in 83ms (Views: 77.2ms | ActiveRecord: 2.2ms | Solr: 0.0ms)
+I, [2014-03-12T04:02:12.543134 #20370]  INFO -- : Started GET "/events" for 31.207.130.58 at 2014-03-12 04:02:12 -0400
+I, [2014-03-12T04:02:12.546335 #20370]  INFO -- : Processing by EventsController#index as HTML
+I, [2014-03-12T04:02:12.552906 #20370]  INFO -- : Completed 500 Internal Server Error in 6ms
+F, [2014-03-12T04:02:12.554709 #20370] FATAL -- : 
+Errno::ECONNREFUSED (Connection refused - {:data=>"fq=type%3AEvent&start=0&rows=30&q=%2A%3A%2A", :method=>:post, :params=>{:wt=>:ruby}, :query=>"wt=ruby", :headers=>{"Content-Type"=>"application/x-www-form-urlencoded; charset=UTF-8"}, :path=>"select", :uri=>#<URI::HTTP:0x00000003a4e518 URL:http://localhost:8983/solr/production/select?wt=ruby>, :open_timeout=>nil, :read_timeout=>nil, :retry_503=>nil, :retry_after_limit=>nil}):
+  app/controllers/events_controller.rb:42:in `index'
+
+
+I, [2014-03-12T04:02:12.560047 #20370]  INFO -- : Processing by ApplicationController#404 as HTML
+I, [2014-03-12T04:02:12.565487 #20370]  INFO -- :   Rendered application/404.html.erb within layouts/application (3.5ms)
+I, [2014-03-12T04:02:12.565690 #20370]  INFO -- : Completed 500 Internal Server Error in 5ms
+I, [2014-03-12T04:04:15.715061 #20494]  INFO -- : Started GET "/events" for 31.207.130.58 at 2014-03-12 04:04:15 -0400
+I, [2014-03-12T04:04:15.746113 #20494]  INFO -- : Processing by EventsController#index as HTML
+I, [2014-03-12T04:04:15.870012 #20494]  INFO -- : Completed 500 Internal Server Error in 124ms
+F, [2014-03-12T04:04:15.872189 #20494] FATAL -- : 
+RSolr::Error::Http (RSolr::Error::Http - 404 Not Found
+Error:     Not Found
+
+Request Data: "fq=type%3AEvent&start=0&rows=30&q=%2A%3A%2A"
+
+Backtrace: /usr/local/rvm/gems/ruby-2.1.0/gems/rsolr-1.0.9/lib/rsolr/client.rb:268:in `adapt_response'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rsolr-1.0.9/lib/rsolr/client.rb:175:in `execute'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rsolr-1.0.9/lib/rsolr/client.rb:161:in `send_and_receive'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot_rails-2.1.0/lib/sunspot/rails/solr_instrumentation.rb:16:in `block in send_and_receive_with_as_instrumentation'
+/usr/local/rvm/gems/ruby-2.1.0/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `block in instrument'
+/usr/local/rvm/gems/ruby-2.1.0/gems/activesupport-4.0.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/usr/local/rvm/gems/ruby-2.1.0/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `instrument'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot_rails-2.1.0/lib/sunspot/rails/solr_instrumentation.rb:15:in `send_and_receive_with_as_instrumentation'
+(eval):2:in `post'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot-2.1.0/lib/sunspot/search/abstract_search.rb:45:in `execute'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot-2.1.0/lib/sunspot/session.rb:59:in `search'):
+  app/controllers/events_controller.rb:42:in `index'
+
+
+I, [2014-03-12T04:04:15.877599 #20494]  INFO -- : Processing by ApplicationController#404 as HTML
+I, [2014-03-12T04:04:15.895208 #20494]  INFO -- :   Rendered application/404.html.erb within layouts/application (14.9ms)
+I, [2014-03-12T04:04:15.895419 #20494]  INFO -- : Completed 500 Internal Server Error in 18ms
+I, [2014-03-12T04:04:17.602784 #20494]  INFO -- : Started GET "/events" for 31.207.130.58 at 2014-03-12 04:04:17 -0400
+I, [2014-03-12T04:04:17.605836 #20494]  INFO -- : Processing by EventsController#index as HTML
+I, [2014-03-12T04:04:17.612588 #20494]  INFO -- : Completed 500 Internal Server Error in 7ms
+F, [2014-03-12T04:04:17.614581 #20494] FATAL -- : 
+RSolr::Error::Http (RSolr::Error::Http - 404 Not Found
+Error:     Not Found
+
+Request Data: "fq=type%3AEvent&start=0&rows=30&q=%2A%3A%2A"
+
+Backtrace: /usr/local/rvm/gems/ruby-2.1.0/gems/rsolr-1.0.9/lib/rsolr/client.rb:268:in `adapt_response'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rsolr-1.0.9/lib/rsolr/client.rb:175:in `execute'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rsolr-1.0.9/lib/rsolr/client.rb:161:in `send_and_receive'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot_rails-2.1.0/lib/sunspot/rails/solr_instrumentation.rb:16:in `block in send_and_receive_with_as_instrumentation'
+/usr/local/rvm/gems/ruby-2.1.0/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `block in instrument'
+/usr/local/rvm/gems/ruby-2.1.0/gems/activesupport-4.0.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/usr/local/rvm/gems/ruby-2.1.0/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `instrument'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot_rails-2.1.0/lib/sunspot/rails/solr_instrumentation.rb:15:in `send_and_receive_with_as_instrumentation'
+(eval):2:in `post'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot-2.1.0/lib/sunspot/search/abstract_search.rb:45:in `execute'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot-2.1.0/lib/sunspot/session.rb:59:in `search'):
+  app/controllers/events_controller.rb:42:in `index'
+
+
+I, [2014-03-12T04:04:17.616579 #20494]  INFO -- : Processing by ApplicationController#404 as HTML
+I, [2014-03-12T04:04:17.619102 #20494]  INFO -- :   Rendered application/404.html.erb within layouts/application (1.7ms)
+I, [2014-03-12T04:04:17.619294 #20494]  INFO -- : Completed 500 Internal Server Error in 3ms
+I, [2014-03-12T04:04:28.134884 #20494]  INFO -- : Started GET "/" for 31.207.130.58 at 2014-03-12 04:04:28 -0400
+I, [2014-03-12T04:04:28.137818 #20494]  INFO -- : Processing by SiteController#index as HTML
+I, [2014-03-12T04:04:28.151956 #20494]  INFO -- :   Rendered site/index.html.erb within layouts/application (4.5ms)
+I, [2014-03-12T04:04:28.272194 #20494]  INFO -- : Completed 200 OK in 134ms (Views: 125.4ms | ActiveRecord: 2.9ms | Solr: 0.0ms)
+I, [2014-03-12T04:04:33.442319 #20494]  INFO -- : Started GET "/events" for 31.207.130.58 at 2014-03-12 04:04:33 -0400
+I, [2014-03-12T04:04:33.444052 #20494]  INFO -- : Processing by EventsController#index as HTML
+I, [2014-03-12T04:04:33.451002 #20494]  INFO -- : Completed 500 Internal Server Error in 7ms
+F, [2014-03-12T04:04:33.452983 #20494] FATAL -- : 
+RSolr::Error::Http (RSolr::Error::Http - 404 Not Found
+Error:     Not Found
+
+Request Data: "fq=type%3AEvent&start=0&rows=30&q=%2A%3A%2A"
+
+Backtrace: /usr/local/rvm/gems/ruby-2.1.0/gems/rsolr-1.0.9/lib/rsolr/client.rb:268:in `adapt_response'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rsolr-1.0.9/lib/rsolr/client.rb:175:in `execute'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rsolr-1.0.9/lib/rsolr/client.rb:161:in `send_and_receive'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot_rails-2.1.0/lib/sunspot/rails/solr_instrumentation.rb:16:in `block in send_and_receive_with_as_instrumentation'
+/usr/local/rvm/gems/ruby-2.1.0/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `block in instrument'
+/usr/local/rvm/gems/ruby-2.1.0/gems/activesupport-4.0.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/usr/local/rvm/gems/ruby-2.1.0/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `instrument'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot_rails-2.1.0/lib/sunspot/rails/solr_instrumentation.rb:15:in `send_and_receive_with_as_instrumentation'
+(eval):2:in `post'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot-2.1.0/lib/sunspot/search/abstract_search.rb:45:in `execute'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot-2.1.0/lib/sunspot/session.rb:59:in `search'):
+  app/controllers/events_controller.rb:42:in `index'
+
+
+I, [2014-03-12T04:04:33.453753 #20494]  INFO -- : Processing by ApplicationController#404 as HTML
+I, [2014-03-12T04:04:33.456560 #20494]  INFO -- :   Rendered application/404.html.erb within layouts/application (1.9ms)
+I, [2014-03-12T04:04:33.456774 #20494]  INFO -- : Completed 500 Internal Server Error in 3ms
+I, [2014-03-12T04:04:58.669506 #20494]  INFO -- : Started GET "/places" for 31.207.130.58 at 2014-03-12 04:04:58 -0400
+I, [2014-03-12T04:04:58.672798 #20494]  INFO -- : Processing by PlacesController#index as HTML
+I, [2014-03-12T04:04:58.730813 #20494]  INFO -- :   Rendered places/index.html.erb within layouts/application (52.4ms)
+I, [2014-03-12T04:04:58.748792 #20494]  INFO -- : Completed 200 OK in 76ms (Views: 70.4ms | ActiveRecord: 2.2ms | Solr: 0.0ms)
+I, [2014-03-12T04:05:21.971142 #20494]  INFO -- : Started GET "/contact" for 31.207.130.58 at 2014-03-12 04:05:21 -0400
+I, [2014-03-12T04:05:21.974250 #20494]  INFO -- : Processing by SiteController#contact_us as HTML
+I, [2014-03-12T04:05:22.016902 #20494]  INFO -- :   Rendered site/contact_us.html.erb within layouts/application (40.5ms)
+I, [2014-03-12T04:05:22.035506 #20494]  INFO -- : Completed 200 OK in 61ms (Views: 59.6ms | ActiveRecord: 0.4ms | Solr: 0.0ms)
+I, [2014-03-12T04:05:25.067108 #20494]  INFO -- : Started GET "/events" for 31.207.130.58 at 2014-03-12 04:05:25 -0400
+I, [2014-03-12T04:05:25.068675 #20494]  INFO -- : Processing by EventsController#index as HTML
+I, [2014-03-12T04:05:25.075371 #20494]  INFO -- : Completed 500 Internal Server Error in 7ms
+F, [2014-03-12T04:05:25.077303 #20494] FATAL -- : 
+RSolr::Error::Http (RSolr::Error::Http - 404 Not Found
+Error:     Not Found
+
+Request Data: "fq=type%3AEvent&start=0&rows=30&q=%2A%3A%2A"
+
+Backtrace: /usr/local/rvm/gems/ruby-2.1.0/gems/rsolr-1.0.9/lib/rsolr/client.rb:268:in `adapt_response'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rsolr-1.0.9/lib/rsolr/client.rb:175:in `execute'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rsolr-1.0.9/lib/rsolr/client.rb:161:in `send_and_receive'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot_rails-2.1.0/lib/sunspot/rails/solr_instrumentation.rb:16:in `block in send_and_receive_with_as_instrumentation'
+/usr/local/rvm/gems/ruby-2.1.0/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `block in instrument'
+/usr/local/rvm/gems/ruby-2.1.0/gems/activesupport-4.0.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/usr/local/rvm/gems/ruby-2.1.0/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `instrument'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot_rails-2.1.0/lib/sunspot/rails/solr_instrumentation.rb:15:in `send_and_receive_with_as_instrumentation'
+(eval):2:in `post'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot-2.1.0/lib/sunspot/search/abstract_search.rb:45:in `execute'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot-2.1.0/lib/sunspot/session.rb:59:in `search'):
+  app/controllers/events_controller.rb:42:in `index'
+
+
+I, [2014-03-12T04:05:25.078237 #20494]  INFO -- : Processing by ApplicationController#404 as HTML
+I, [2014-03-12T04:05:25.080756 #20494]  INFO -- :   Rendered application/404.html.erb within layouts/application (1.8ms)
+I, [2014-03-12T04:05:25.081093 #20494]  INFO -- : Completed 500 Internal Server Error in 3ms
+I, [2014-03-12T04:05:56.301484 #20494]  INFO -- : Started GET "/images/spinner" for 31.207.130.58 at 2014-03-12 04:05:56 -0400
+F, [2014-03-12T04:05:56.305664 #20494] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/images/spinner"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2014-03-12T04:05:56.307105 #20494]  INFO -- : Processing by ApplicationController#404 as HTML
+I, [2014-03-12T04:05:56.310133 #20494]  INFO -- :   Rendered application/404.html.erb within layouts/application (1.8ms)
+I, [2014-03-12T04:05:56.310385 #20494]  INFO -- : Completed 500 Internal Server Error in 3ms
+I, [2014-03-12T04:05:56.312086 #20494]  INFO -- : Started GET "/users/sign_in" for 31.207.130.58 at 2014-03-12 04:05:56 -0400
+I, [2014-03-12T04:05:56.314852 #20494]  INFO -- : Processing by Devise::SessionsController#new as */*
+I, [2014-03-12T04:05:56.355106 #20494]  INFO -- :   Rendered devise/sessions/new.html.erb (11.3ms)
+I, [2014-03-12T04:05:56.355557 #20494]  INFO -- : Completed 200 OK in 40ms (Views: 13.1ms | ActiveRecord: 0.7ms | Solr: 0.0ms)
+I, [2014-03-12T04:05:56.563889 #20494]  INFO -- : Started GET "/images/close" for 31.207.130.58 at 2014-03-12 04:05:56 -0400
+F, [2014-03-12T04:05:56.565655 #20494] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/images/close"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2014-03-12T04:05:56.566862 #20494]  INFO -- : Processing by ApplicationController#404 as HTML
+I, [2014-03-12T04:05:56.569893 #20494]  INFO -- :   Rendered application/404.html.erb within layouts/application (1.8ms)
+I, [2014-03-12T04:05:56.570212 #20494]  INFO -- : Completed 500 Internal Server Error in 3ms
+I, [2014-03-12T04:05:57.820082 #20494]  INFO -- : Started POST "/users/sign_in" for 31.207.130.58 at 2014-03-12 04:05:57 -0400
+I, [2014-03-12T04:05:57.823321 #20494]  INFO -- : Processing by Devise::SessionsController#create as HTML
+I, [2014-03-12T04:05:57.823471 #20494]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"v3PuVWnG5BFrdhX5WwLLwK+GsXAF43qbz3OSV2UFKgE=", "user"=>{"email"=>"aa@ss.aw", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"LOG IN"}
+I, [2014-03-12T04:05:57.998113 #20494]  INFO -- : Redirected to http://daysandnights.nl:3000/
+I, [2014-03-12T04:05:57.998471 #20494]  INFO -- : Completed 302 Found in 175ms (ActiveRecord: 35.8ms)
+I, [2014-03-12T04:05:58.080267 #20494]  INFO -- : Started GET "/" for 31.207.130.58 at 2014-03-12 04:05:58 -0400
+I, [2014-03-12T04:05:58.081649 #20494]  INFO -- : Processing by SiteController#index as HTML
+I, [2014-03-12T04:05:58.086609 #20494]  INFO -- :   Rendered site/index.html.erb within layouts/application (1.3ms)
+I, [2014-03-12T04:05:58.107486 #20494]  INFO -- : Completed 200 OK in 26ms (Views: 21.6ms | ActiveRecord: 1.2ms | Solr: 0.0ms)
+I, [2014-03-12T04:06:01.750209 #20494]  INFO -- : Started GET "/events" for 31.207.130.58 at 2014-03-12 04:06:01 -0400
+I, [2014-03-12T04:06:01.751935 #20494]  INFO -- : Processing by EventsController#index as HTML
+I, [2014-03-12T04:06:01.759039 #20494]  INFO -- : Completed 500 Internal Server Error in 7ms
+F, [2014-03-12T04:06:01.761157 #20494] FATAL -- : 
+RSolr::Error::Http (RSolr::Error::Http - 404 Not Found
+Error:     Not Found
+
+Request Data: "fq=type%3AEvent&start=0&rows=30&q=%2A%3A%2A"
+
+Backtrace: /usr/local/rvm/gems/ruby-2.1.0/gems/rsolr-1.0.9/lib/rsolr/client.rb:268:in `adapt_response'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rsolr-1.0.9/lib/rsolr/client.rb:175:in `execute'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rsolr-1.0.9/lib/rsolr/client.rb:161:in `send_and_receive'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot_rails-2.1.0/lib/sunspot/rails/solr_instrumentation.rb:16:in `block in send_and_receive_with_as_instrumentation'
+/usr/local/rvm/gems/ruby-2.1.0/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `block in instrument'
+/usr/local/rvm/gems/ruby-2.1.0/gems/activesupport-4.0.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/usr/local/rvm/gems/ruby-2.1.0/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `instrument'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot_rails-2.1.0/lib/sunspot/rails/solr_instrumentation.rb:15:in `send_and_receive_with_as_instrumentation'
+(eval):2:in `post'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot-2.1.0/lib/sunspot/search/abstract_search.rb:45:in `execute'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot-2.1.0/lib/sunspot/session.rb:59:in `search'):
+  app/controllers/events_controller.rb:42:in `index'
+
+
+I, [2014-03-12T04:06:01.762151 #20494]  INFO -- : Processing by ApplicationController#404 as HTML
+I, [2014-03-12T04:06:01.765566 #20494]  INFO -- :   Rendered application/404.html.erb within layouts/application (2.6ms)
+I, [2014-03-12T04:06:01.790737 #20494]  INFO -- : Completed 200 OK in 28ms (Views: 27.4ms | ActiveRecord: 0.5ms | Solr: 5.3ms)
+I, [2014-03-12T04:06:23.350960 #20494]  INFO -- : Started GET "/places" for 31.207.130.58 at 2014-03-12 04:06:23 -0400
+I, [2014-03-12T04:06:23.353803 #20494]  INFO -- : Processing by PlacesController#index as HTML
+I, [2014-03-12T04:06:23.385418 #20494]  INFO -- :   Rendered places/index.html.erb within layouts/application (29.4ms)
+I, [2014-03-12T04:06:23.403245 #20494]  INFO -- : Completed 200 OK in 49ms (Views: 45.6ms | ActiveRecord: 1.9ms | Solr: 0.0ms)
+I, [2014-03-12T04:06:25.075323 #20494]  INFO -- : Started GET "/news" for 31.207.130.58 at 2014-03-12 04:06:25 -0400
+I, [2014-03-12T04:06:25.078280 #20494]  INFO -- : Processing by NewsController#index as HTML
+I, [2014-03-12T04:06:25.089129 #20494]  INFO -- :   Rendered news/index.html.erb within layouts/application (6.4ms)
+I, [2014-03-12T04:06:25.107899 #20494]  INFO -- : Completed 200 OK in 29ms (Views: 25.8ms | ActiveRecord: 1.5ms | Solr: 0.0ms)
+I, [2014-03-12T04:06:28.386609 #20494]  INFO -- : Started GET "/places" for 31.207.130.58 at 2014-03-12 04:06:28 -0400
+I, [2014-03-12T04:06:28.388133 #20494]  INFO -- : Processing by PlacesController#index as HTML
+I, [2014-03-12T04:06:28.399467 #20494]  INFO -- :   Rendered places/index.html.erb within layouts/application (9.3ms)
+I, [2014-03-12T04:06:28.416664 #20494]  INFO -- : Completed 200 OK in 28ms (Views: 25.4ms | ActiveRecord: 1.4ms | Solr: 0.0ms)
+I, [2014-03-12T04:06:33.251259 #20494]  INFO -- : Started GET "/events" for 31.207.130.58 at 2014-03-12 04:06:33 -0400
+I, [2014-03-12T04:06:33.252775 #20494]  INFO -- : Processing by EventsController#index as HTML
+I, [2014-03-12T04:06:33.259469 #20494]  INFO -- : Completed 500 Internal Server Error in 7ms
+F, [2014-03-12T04:06:33.261501 #20494] FATAL -- : 
+RSolr::Error::Http (RSolr::Error::Http - 404 Not Found
+Error:     Not Found
+
+Request Data: "fq=type%3AEvent&start=0&rows=30&q=%2A%3A%2A"
+
+Backtrace: /usr/local/rvm/gems/ruby-2.1.0/gems/rsolr-1.0.9/lib/rsolr/client.rb:268:in `adapt_response'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rsolr-1.0.9/lib/rsolr/client.rb:175:in `execute'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rsolr-1.0.9/lib/rsolr/client.rb:161:in `send_and_receive'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot_rails-2.1.0/lib/sunspot/rails/solr_instrumentation.rb:16:in `block in send_and_receive_with_as_instrumentation'
+/usr/local/rvm/gems/ruby-2.1.0/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `block in instrument'
+/usr/local/rvm/gems/ruby-2.1.0/gems/activesupport-4.0.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/usr/local/rvm/gems/ruby-2.1.0/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `instrument'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot_rails-2.1.0/lib/sunspot/rails/solr_instrumentation.rb:15:in `send_and_receive_with_as_instrumentation'
+(eval):2:in `post'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot-2.1.0/lib/sunspot/search/abstract_search.rb:45:in `execute'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot-2.1.0/lib/sunspot/session.rb:59:in `search'):
+  app/controllers/events_controller.rb:42:in `index'
+
+
+I, [2014-03-12T04:06:33.262504 #20494]  INFO -- : Processing by ApplicationController#404 as HTML
+I, [2014-03-12T04:06:33.265814 #20494]  INFO -- :   Rendered application/404.html.erb within layouts/application (2.4ms)
+I, [2014-03-12T04:06:33.283243 #20494]  INFO -- : Completed 200 OK in 20ms (Views: 19.6ms | ActiveRecord: 0.5ms | Solr: 5.1ms)
+I, [2014-03-12T04:06:36.147486 #20494]  INFO -- : Started GET "/contact" for 31.207.130.58 at 2014-03-12 04:06:36 -0400
+I, [2014-03-12T04:06:36.148978 #20494]  INFO -- : Processing by SiteController#contact_us as HTML
+I, [2014-03-12T04:06:36.155424 #20494]  INFO -- :   Rendered site/contact_us.html.erb within layouts/application (5.0ms)
+I, [2014-03-12T04:06:36.174229 #20494]  INFO -- : Completed 200 OK in 25ms (Views: 23.5ms | ActiveRecord: 0.7ms | Solr: 0.0ms)
+I, [2014-03-12T04:06:38.986855 #20494]  INFO -- : Started GET "/places" for 31.207.130.58 at 2014-03-12 04:06:38 -0400
+I, [2014-03-12T04:06:38.988430 #20494]  INFO -- : Processing by PlacesController#index as HTML
+I, [2014-03-12T04:06:38.999611 #20494]  INFO -- :   Rendered places/index.html.erb within layouts/application (9.2ms)
+I, [2014-03-12T04:06:39.017161 #20494]  INFO -- : Completed 200 OK in 28ms (Views: 25.6ms | ActiveRecord: 1.3ms | Solr: 0.0ms)
+I, [2014-03-12T04:06:42.558239 #20494]  INFO -- : Started GET "/events" for 31.207.130.58 at 2014-03-12 04:06:42 -0400
+I, [2014-03-12T04:06:42.559837 #20494]  INFO -- : Processing by EventsController#index as HTML
+I, [2014-03-12T04:06:42.566424 #20494]  INFO -- : Completed 500 Internal Server Error in 6ms
+F, [2014-03-12T04:06:42.568464 #20494] FATAL -- : 
+RSolr::Error::Http (RSolr::Error::Http - 404 Not Found
+Error:     Not Found
+
+Request Data: "fq=type%3AEvent&start=0&rows=30&q=%2A%3A%2A"
+
+Backtrace: /usr/local/rvm/gems/ruby-2.1.0/gems/rsolr-1.0.9/lib/rsolr/client.rb:268:in `adapt_response'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rsolr-1.0.9/lib/rsolr/client.rb:175:in `execute'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rsolr-1.0.9/lib/rsolr/client.rb:161:in `send_and_receive'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot_rails-2.1.0/lib/sunspot/rails/solr_instrumentation.rb:16:in `block in send_and_receive_with_as_instrumentation'
+/usr/local/rvm/gems/ruby-2.1.0/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `block in instrument'
+/usr/local/rvm/gems/ruby-2.1.0/gems/activesupport-4.0.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/usr/local/rvm/gems/ruby-2.1.0/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `instrument'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot_rails-2.1.0/lib/sunspot/rails/solr_instrumentation.rb:15:in `send_and_receive_with_as_instrumentation'
+(eval):2:in `post'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot-2.1.0/lib/sunspot/search/abstract_search.rb:45:in `execute'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot-2.1.0/lib/sunspot/session.rb:59:in `search'):
+  app/controllers/events_controller.rb:42:in `index'
+
+
+I, [2014-03-12T04:06:42.569484 #20494]  INFO -- : Processing by ApplicationController#404 as HTML
+I, [2014-03-12T04:06:42.572678 #20494]  INFO -- :   Rendered application/404.html.erb within layouts/application (2.3ms)
+I, [2014-03-12T04:06:42.590738 #20494]  INFO -- : Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.4ms | Solr: 5.1ms)
+I, [2014-03-12T04:13:23.389417 #20860]  INFO -- : Started GET "/events" for 31.207.130.58 at 2014-03-12 04:13:23 -0400
+I, [2014-03-12T04:13:23.423373 #20860]  INFO -- : Processing by EventsController#index as HTML
+I, [2014-03-12T04:13:23.589568 #20860]  INFO -- : Completed 500 Internal Server Error in 166ms
+F, [2014-03-12T04:13:23.592603 #20860] FATAL -- : 
+RSolr::Error::Http (RSolr::Error::Http - 404 Not Found
+Error:     Not Found
+
+Request Data: "fq=type%3AEvent&start=0&rows=30&q=%2A%3A%2A"
+
+Backtrace: /usr/local/rvm/gems/ruby-2.1.0/gems/rsolr-1.0.9/lib/rsolr/client.rb:268:in `adapt_response'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rsolr-1.0.9/lib/rsolr/client.rb:175:in `execute'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rsolr-1.0.9/lib/rsolr/client.rb:161:in `send_and_receive'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot_rails-2.1.0/lib/sunspot/rails/solr_instrumentation.rb:16:in `block in send_and_receive_with_as_instrumentation'
+/usr/local/rvm/gems/ruby-2.1.0/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `block in instrument'
+/usr/local/rvm/gems/ruby-2.1.0/gems/activesupport-4.0.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/usr/local/rvm/gems/ruby-2.1.0/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `instrument'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot_rails-2.1.0/lib/sunspot/rails/solr_instrumentation.rb:15:in `send_and_receive_with_as_instrumentation'
+(eval):2:in `post'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot-2.1.0/lib/sunspot/search/abstract_search.rb:45:in `execute'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot-2.1.0/lib/sunspot/session.rb:59:in `search'):
+  app/controllers/events_controller.rb:42:in `index'
+
+
+I, [2014-03-12T04:13:23.598028 #20860]  INFO -- : Processing by ApplicationController#404 as HTML
+I, [2014-03-12T04:13:23.631332 #20860]  INFO -- :   Rendered application/404.html.erb within layouts/application (30.7ms)
+I, [2014-03-12T04:13:23.750278 #20860]  INFO -- : Completed 200 OK in 152ms (Views: 148.5ms | ActiveRecord: 2.5ms | Solr: 138.7ms)
+I, [2014-03-13T00:35:55.351819 #413]  INFO -- : Started GET "/sssd" for 31.207.130.58 at 2014-03-13 00:35:55 -0400
+F, [2014-03-13T00:35:55.394376 #413] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/sssd"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2014-03-13T00:35:55.405624 #413]  INFO -- : Processing by ApplicationController#404 as HTML
+I, [2014-03-13T00:35:55.446283 #413]  INFO -- :   Rendered application/404.html.erb within layouts/application (15.0ms)
+I, [2014-03-13T00:35:55.446534 #413]  INFO -- : Completed 500 Internal Server Error in 41ms
+I, [2014-03-13T00:36:06.181578 #413]  INFO -- : Started GET "/" for 31.207.130.58 at 2014-03-13 00:36:06 -0400
+I, [2014-03-13T00:36:06.184591 #413]  INFO -- : Processing by SiteController#index as HTML
+I, [2014-03-13T00:36:06.198838 #413]  INFO -- :   Rendered site/index.html.erb within layouts/application (4.7ms)
+I, [2014-03-13T00:36:06.429624 #413]  INFO -- : Completed 200 OK in 245ms (Views: 236.3ms | ActiveRecord: 2.8ms | Solr: 0.0ms)
+I, [2014-03-13T00:36:13.036572 #413]  INFO -- : Started GET "/contact" for 31.207.130.58 at 2014-03-13 00:36:13 -0400
+I, [2014-03-13T00:36:13.039674 #413]  INFO -- : Processing by SiteController#contact_us as HTML
+I, [2014-03-13T00:36:13.082610 #413]  INFO -- :   Rendered site/contact_us.html.erb within layouts/application (32.3ms)
+I, [2014-03-13T00:36:13.100703 #413]  INFO -- : Completed 200 OK in 61ms (Views: 59.4ms | ActiveRecord: 0.4ms | Solr: 0.0ms)
+I, [2014-03-13T00:36:17.176430 #413]  INFO -- : Started GET "/events" for 31.207.130.58 at 2014-03-13 00:36:17 -0400
+I, [2014-03-13T00:36:17.186559 #413]  INFO -- : Processing by EventsController#index as HTML
+I, [2014-03-13T00:36:17.222495 #413]  INFO -- : Completed 500 Internal Server Error in 36ms
+F, [2014-03-13T00:36:17.224451 #413] FATAL -- : 
+RSolr::Error::Http (RSolr::Error::Http - 404 Not Found
+Error:     Not Found
+
+Request Data: "fq=type%3AEvent&start=0&rows=30&q=%2A%3A%2A"
+
+Backtrace: /usr/local/rvm/gems/ruby-2.1.0/gems/rsolr-1.0.9/lib/rsolr/client.rb:268:in `adapt_response'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rsolr-1.0.9/lib/rsolr/client.rb:175:in `execute'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rsolr-1.0.9/lib/rsolr/client.rb:161:in `send_and_receive'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot_rails-2.1.0/lib/sunspot/rails/solr_instrumentation.rb:16:in `block in send_and_receive_with_as_instrumentation'
+/usr/local/rvm/gems/ruby-2.1.0/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `block in instrument'
+/usr/local/rvm/gems/ruby-2.1.0/gems/activesupport-4.0.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/usr/local/rvm/gems/ruby-2.1.0/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `instrument'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot_rails-2.1.0/lib/sunspot/rails/solr_instrumentation.rb:15:in `send_and_receive_with_as_instrumentation'
+(eval):2:in `post'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot-2.1.0/lib/sunspot/search/abstract_search.rb:45:in `execute'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot-2.1.0/lib/sunspot/session.rb:59:in `search'):
+  app/controllers/events_controller.rb:42:in `index'
+
+
+I, [2014-03-13T00:36:17.226729 #413]  INFO -- : Processing by ApplicationController#404 as HTML
+I, [2014-03-13T00:36:17.229324 #413]  INFO -- :   Rendered application/404.html.erb within layouts/application (1.8ms)
+I, [2014-03-13T00:36:17.229512 #413]  INFO -- : Completed 500 Internal Server Error in 3ms
+I, [2014-03-13T01:17:40.308409 #825]  INFO -- : Started GET "/ssss" for 31.207.130.58 at 2014-03-13 01:17:40 -0400
+F, [2014-03-13T01:17:40.338878 #825] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/ssss"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2014-03-13T01:17:40.345013 #825]  INFO -- : Processing by ApplicationController#404 as HTML
+I, [2014-03-13T01:17:40.385619 #825]  INFO -- :   Rendered application/404.html.erb within layouts/application (15.0ms)
+I, [2014-03-13T01:17:40.385870 #825]  INFO -- : Completed 500 Internal Server Error in 41ms
+I, [2014-03-13T01:18:57.643035 #840]  INFO -- : Started GET "/events" for 31.207.130.58 at 2014-03-13 01:18:57 -0400
+I, [2014-03-13T01:18:57.675174 #840]  INFO -- : Processing by EventsController#index as HTML
+I, [2014-03-13T01:18:57.710603 #840]  INFO -- : Completed 500 Internal Server Error in 35ms
+F, [2014-03-13T01:18:57.712691 #840] FATAL -- : 
+RSolr::Error::Http (RSolr::Error::Http - 404 Not Found
+Error:     Not Found
+
+Request Data: "fq=type%3AEvent&start=0&rows=30&q=%2A%3A%2A"
+
+Backtrace: /usr/local/rvm/gems/ruby-2.1.0/gems/rsolr-1.0.9/lib/rsolr/client.rb:268:in `adapt_response'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rsolr-1.0.9/lib/rsolr/client.rb:175:in `execute'
+/usr/local/rvm/gems/ruby-2.1.0/gems/rsolr-1.0.9/lib/rsolr/client.rb:161:in `send_and_receive'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot_rails-2.1.0/lib/sunspot/rails/solr_instrumentation.rb:16:in `block in send_and_receive_with_as_instrumentation'
+/usr/local/rvm/gems/ruby-2.1.0/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `block in instrument'
+/usr/local/rvm/gems/ruby-2.1.0/gems/activesupport-4.0.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/usr/local/rvm/gems/ruby-2.1.0/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `instrument'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot_rails-2.1.0/lib/sunspot/rails/solr_instrumentation.rb:15:in `send_and_receive_with_as_instrumentation'
+(eval):2:in `post'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot-2.1.0/lib/sunspot/search/abstract_search.rb:45:in `execute'
+/usr/local/rvm/gems/ruby-2.1.0/gems/sunspot-2.1.0/lib/sunspot/session.rb:59:in `search'):
+  app/controllers/events_controller.rb:42:in `index'
+
+
+I, [2014-03-13T01:18:57.718049 #840]  INFO -- : Processing by ApplicationController#404 as HTML
+I, [2014-03-13T01:18:57.735494 #840]  INFO -- :   Rendered application/404.html.erb within layouts/application (14.9ms)
+I, [2014-03-13T01:18:57.735710 #840]  INFO -- : Completed 500 Internal Server Error in 17ms

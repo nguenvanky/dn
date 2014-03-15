@@ -1,0 +1,85 @@
+<div class='content-wide'>
+
+<h2>Edit <%= resource_name.to_s.humanize %></h2>
+
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div class="new-email"><%= f.label :email %>
+  <%= f.email_field :email %></div>
+
+  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+  <% end %>
+
+  <div class="registration-username"><%= f.label 'Username' %>
+  <%= f.text_field :profile_name %></div>
+
+  <% if current_user.right == 'user' %> 
+  <div class="registration-gender"><%= f.label :gender %>
+  <%= f.radio_button :gender, "male", :checked => true %>Male
+  <%= f.radio_button :gender, "female" %>Female</div>
+  <% end %>
+
+  <div class="new-password"><%= f.label :password %> <i>(leave blank if you don't want to change it)</i>
+  <%= f.password_field :password, :autocomplete => "off" %></div>
+
+  <div class="edit-password"><%= f.label "Password confirm" %>
+  <%= f.password_field :password_confirmation %></div>
+
+  <div class="edit-password-confirm"><%= f.label :current_password %> <i>(we need it to confirm your changes)</i>
+  <%= f.password_field :current_password %></div>
+
+  <div class="create-link"><%= f.submit "Update" %></div>
+
+<% end %>
+
+ <div class="create-link2"><%= button_to "Cancel my account", registration_path(resource_name), :data => { :confirm => "Are you sure?" }, :method => :delete %></div>
+
+<div class="back-link"><%= link_to "Back", :back %></div>
+
+</div>
+
+<div class="sidebar-right-340">
+<div class="sidebar-manage">
+<h2>MANAGE</h2>
+<% if  current_user.right == 'administrator' %>
+<div class="manage-content-wrapper">
+<div class="manage-content"><%= link_to 'Your account', user_path(:id => current_user.profile_name) %></div>
+<div class="manage-content"><%= link_to 'Edit account', edit_user_registration_path %></div>
+<div class="manage-content"><%= link_to 'Manage user rights', manage_users_path %></div>
+<div class="manage-content"><%= link_to 'Manage content', manage_content_path %></div>
+<div class="manage-content"><%= link_to 'Add advertises', new_advertise_path %></div>
+<div class="manage-content"><%= link_to 'Add place types', new_place_type_path %></div>
+<div class="manage-content"><%= link_to 'Add news', new_news_path %></div>
+<div class="manage-content"><%= link_to 'Add places', new_place_path %></div>
+<div class="manage-content"><%= link_to 'Add events', new_event_path %></div>
+</div>
+<% end %>
+<% if current_user.right == 'company' %>
+<div class="manage-content-wrapper">
+<div class="manage-content"><%= link_to 'Your account', user_path(:id => current_user.profile_name) %></div>
+<div class="manage-content"><%= link_to 'Edit account', edit_user_registration_path %></div>
+<div class="manage-content"><%= link_to 'Manage content', manage_content_path %></div>
+<div class="manage-content"><%= link_to 'Add places', new_place_path %></div>
+<div class="manage-content"><%= link_to 'Add events', new_event_path %></div>
+</div>
+<% end %>
+<% if current_user.right == 'user' %>
+<div class="manage-content-wrapper">
+<div class="manage-content"><%= link_to 'Edit account', edit_user_registration_path %></div>
+</div>
+<% end %>
+</div>
+
+<div class="search-wrapper">
+<h2>SEARCH</h2>
+<div class="search-form">
+<%= form_tag result_path, :method => :get do %>
+    <%= text_field_tag :search, params[:search], :placeholder => "Search...", class: "search-input" %>
+    <%= submit_tag "Search", :name => nil, :type => :image, :src => "/img/loop.png", class: "search-loop" %>
+<% end %>
+</div>
+</div>
+
+</div>

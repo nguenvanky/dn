@@ -1,0 +1,68 @@
+Feb 16, 2014 4:59:49 a.m. org.apache.solr.servlet.SolrDispatchFilter init
+INFO: SolrDispatchFilter.init()
+Feb 16, 2014 4:59:49 a.m. org.apache.solr.core.SolrResourceLoader locateSolrHome
+INFO: JNDI not configured for solr (NoInitialContextEx)
+Feb 16, 2014 4:59:49 a.m. org.apache.solr.core.SolrResourceLoader locateSolrHome
+INFO: using system property solr.solr.home: /root/daysandnights2/solr
+Feb 16, 2014 4:59:49 a.m. org.apache.solr.core.CoreContainer$Initializer initialize
+INFO: looking for solr.xml: /root/daysandnights2/solr/solr.xml
+Feb 16, 2014 4:59:49 a.m. org.apache.solr.core.CoreContainer <init>
+INFO: New CoreContainer 1372977162
+Feb 16, 2014 4:59:49 a.m. org.apache.solr.core.CoreContainer load
+INFO: Loading CoreContainer using Solr Home: '/root/daysandnights2/solr/'
+Feb 16, 2014 4:59:49 a.m. org.apache.solr.core.SolrResourceLoader <init>
+INFO: new SolrResourceLoader for directory: '/root/daysandnights2/solr/'
+Feb 16, 2014 4:59:49 a.m. org.apache.solr.servlet.SolrDispatchFilter init
+SEVERE: Could not start Solr. Check solr/home property and the logs
+Feb 16, 2014 4:59:49 a.m. org.apache.solr.common.SolrException log
+SEVERE: null:org.apache.solr.common.SolrException: 
+   at org.apache.solr.core.CoreContainer.load(CoreContainer.java:432)
+   at org.apache.solr.core.CoreContainer.load(CoreContainer.java:405)
+   at org.apache.solr.core.CoreContainer$Initializer.initialize(CoreContainer.java:337)
+   at org.apache.solr.servlet.SolrDispatchFilter.init(SolrDispatchFilter.java:110)
+   at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+   at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+   at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+   at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+   at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+   at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+   at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+   at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+   at org.eclipse.jetty.deploy.bindings.StandardStarter.processBinding(StandardStarter.java:39)
+   at org.eclipse.jetty.deploy.AppLifeCycle.runBindings(AppLifeCycle.java:186)
+   at org.eclipse.jetty.deploy.DeploymentManager.requestAppGoal(DeploymentManager.java:494)
+   at org.eclipse.jetty.deploy.DeploymentManager.addApp(DeploymentManager.java:141)
+   at org.eclipse.jetty.deploy.providers.ScanningAppProvider.fileAdded(ScanningAppProvider.java:145)
+   at org.eclipse.jetty.deploy.providers.ScanningAppProvider$1.fileAdded(ScanningAppProvider.java:56)
+   at org.eclipse.jetty.util.Scanner.reportAddition(Scanner.java:609)
+   at org.eclipse.jetty.util.Scanner.reportDifferences(Scanner.java:540)
+   at org.eclipse.jetty.util.Scanner.scan(Scanner.java:403)
+   at org.eclipse.jetty.util.Scanner.doStart(Scanner.java:337)
+   at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+   at org.eclipse.jetty.deploy.providers.ScanningAppProvider.doStart(ScanningAppProvider.java:121)
+   at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+   at org.eclipse.jetty.deploy.DeploymentManager.startAppProvider(DeploymentManager.java:555)
+   at org.eclipse.jetty.deploy.DeploymentManager.doStart(DeploymentManager.java:230)
+   at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+   at org.eclipse.jetty.util.component.AggregateLifeCycle.doStart(AggregateLifeCycle.java:81)
+   at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:58)
+   at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:96)
+   at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+   at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+   at org.eclipse.jetty.xml.XmlConfiguration$1.run(XmlConfiguration.java:1266)
+   at java.security.AccessController.doPrivileged(libgcj.so.10)
+   at org.eclipse.jetty.xml.XmlConfiguration.main(XmlConfiguration.java:1189)
+   at java.lang.reflect.Method.invoke(libgcj.so.10)
+   at org.eclipse.jetty.start.Main.invokeMain(Main.java:472)
+   at org.eclipse.jetty.start.Main.start(Main.java:620)
+   at org.eclipse.jetty.start.Main.main(Main.java:95)
+Caused by: java.lang.NullPointerException
+   at gnu.xml.transform.TransformerImpl.transform(libgcj.so.10)
+   at org.apache.solr.core.CoreContainer.copyDoc(CoreContainer.java:719)
+   at org.apache.solr.core.CoreContainer.load(CoreContainer.java:430)
+   ...39 more
+
+Feb 16, 2014 4:59:49 a.m. org.apache.solr.servlet.SolrDispatchFilter init
+INFO: SolrDispatchFilter.init() done
+Feb 16, 2014 4:59:55 a.m. org.apache.solr.core.CoreContainer finalize
+SEVERE: CoreContainer was not shutdown prior to finalize(), indicates a bug -- POSSIBLE RESOURCE LEAK!!!  instance=1372977162
